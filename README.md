@@ -67,5 +67,7 @@
 
         <a href="#" class="button">¡Únete a nuestra comunidad hoy mismo!</a>
     </div>
+    <a href="register.php" class="button">¡Únete a nuestra comunidad hoy mismo!</a>
+
 </body>
 </html>

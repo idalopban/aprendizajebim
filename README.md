@@ -2,6 +2,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido a nuestra comunidad</title>
+</head>
+<body>
+    <h2>Bienvenido a nuestra comunidad</h2>
+    <p>¡Gracias por unirte a nosotros! Estamos emocionados de tenerte como parte de nuestra comunidad de aprendizaje BIM.</p>
+    <p>Para comenzar, por favor crea una cuenta haciendo clic en el siguiente enlace:</p>
+    <a href="register.php" class="button">Crear una cuenta</a>
+</body>
+</html>
+
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear redes de aprendizaje de BIM para compartir conocimientos y experiencias</title>
     <style>
         /* Estilos CSS aquí */
@@ -64,6 +78,8 @@
             <li>Implementación de software BIM</li>
             <li>Soporte técnico continuo</li>
         </ul>
+
+<a href="register.php" class="button">¡Únete a nuestra comunidad hoy mismo!</a>
 
         <a href="#" class="button">¡Únete a nuestra comunidad hoy mismo!</a>
     </div>

@@ -1,12 +1,5 @@
-<?php
-// Si se envía el formulario de registro, redirigir a la página de bienvenida
-if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
-    header("Location: welcome.php");
-    exit();
-}
 ?>
 
-<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">

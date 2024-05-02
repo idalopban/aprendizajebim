@@ -1,45 +1,21 @@
+<?php
+// Si se envía el formulario de registro, redirigir a la página de bienvenida
+if ($_SERVER["REQUEST_METHOD"] == "POST" && isset($_POST['submit'])) {
+    header("Location: welcome.php");
+    exit();
+}
+?>
+
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crear redes de aprendizaje de BIM para compartir conocimientos y experiencias</title>
-    <style>
-        /* Estilos CSS aquí */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #007bff;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        h2 {
-            color: #007bff;
-        }
-        p {
-            line-height: 1.6;
-        }
-        .button {
-            display: inline-block;
-            background-color: #007bff;
-            color: #fff;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-    </style>
 </head>
 <body>
     <header>
+        <img src="bim_logo.png" alt="Logo BIM">
         <h1>Bienvenido a nuestra comunidad de aprendizaje BIM</h1>
         <p>¡Construyendo juntos el futuro de la industria!</p>
     </header>
@@ -65,7 +41,9 @@
             <li>Soporte técnico continuo</li>
         </ul>
 
-        <a href="#" class="button">¡Únete a nuestra comunidad hoy mismo!</a>
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <button type="submit" name="submit" class="button">¡Únete a nuestra comunidad hoy mismo!</button>
+        </form>
     </div>
 </body>
 </html>
